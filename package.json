@@ -1,0 +1,34 @@
+{
+  "name": "parcel-project-template",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.com/DashaPash/-Podstrona-dla-Wsparcia-Akcji-ZooArt",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /-Podstrona-dla-Wsparcia-Akcji-ZooArt/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DashaPash/-Podstrona-dla-Wsparcia-Akcji-ZooArt.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https:/github.com/DashaPash/-Podstrona-dla-Wsparcia-Akcji-ZooArt/issues"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel": "^2.7.0"
+  }
+}
