@@ -1,0 +1,15 @@
+.form {
+  margin-bottom: 10px;
+
+  &__btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    border: 1px solid $main-text-color;
+    border-radius: 5px;
+    &:hover {
+      color: $accent-color;
+      border: 1px solid $accent-color;
+    }
+  }
+}
