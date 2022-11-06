@@ -1,16 +1,39 @@
-<section class="form container">
-  <p clss="form__text">
-    Ostatnie miesiące pokazują jasno, że pomoc jest potrzebna. Nie tylko finansowa albo rzeczowa.
-    Duża część waszych próśb dotyczy wsparcia w przygotowaniu i promowaniu wydarzeń, na których
-    brylują zwierzaki. Widzimy też rosnącą popularność twórców, którzy swój content opierają na
-    relacjach ze zwierzętami. W ten sposób promują pozytywne relacje z pupilami, co idealnie wpisuje
-    się w naszą misję. Przyszedł czas, gdy możemy pomóc sobie nawzajem.
-  </p>
-  <button type="button" class="form__btn">
-    WYPEŁNIJ FORMULARZ I ROZPOCZNIJ WSPÓŁPRACĘ Z ZOOART
-  </button>
-  <p clss="form__text">
-    Razem możemy zrobić wiele dobrego - potwierdzą to wszyscy, do których nasza pomoc już dotarła.
-    Zapraszamy do obejrzenia naszej galerii - Waszej Ściany Chwały
-  </p>
-</section>
+<div class="backdrop">
+  <section class="modal-window">
+    <button class="modal-window__btn" type="button">
+      x
+      <!-- <svg class="modal-window__icon-close-btn" width="18" height="18">
+        <use href="../images/sprite.svg#icon-close-btn"></use>
+      </svg> -->
+    </button>
+    <p class="modal-window__text">
+      Jeśli prowadzisz działalność związaną ze zwierzętami, organizujesz eventy albo tworzysz swój
+      content w dowolnych mediach społecznościowych, zgłoś się do nas! To tylko 3 proste kroki:
+    </p>
+    <form class="form">
+      <ul class="form__list">
+        <li class="form__item">
+          <label for="tel">
+            <p>Wpisz swój numer telefonu</p>
+            <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
+          </label>
+        </li>
+        <li class="form__item">
+          <label for="comment">
+            Wyjaśnij czym się zajmujesz i w jaki sposób chcesz z nami współpracować</label
+          >
+          <textarea class="comment" name="comment" id="comment" rows="8"></textarea>
+        </li>
+        <li class="form__item">
+          <label for="comment">Określ czego od nas oczekujesz i jak pomożesz naszej sprawie.</label>
+          <textarea class="comment" name="comment" id="comment" rows="8"></textarea>
+        </li>
+        <li class="form__item">
+          <a href="./partial/rules.html">
+            Zapoznaj się z zasadami, według których będzie przebiegać współpraca.</a
+          >
+        </li>
+      </ul>
+    </form>
+  </section>
+</div>
