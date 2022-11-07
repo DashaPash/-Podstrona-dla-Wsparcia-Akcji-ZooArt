@@ -1,10 +1,9 @@
-<div class="backdrop">
+<div class="backdrop visually-hidden">
   <section class="modal-window">
-    <button class="modal-window__btn" type="button">
-      x
-      <!-- <svg class="modal-window__icon-close-btn" width="18" height="18">
-        <use href="../images/sprite.svg#icon-close-btn"></use>
-      </svg> -->
+    <button class="modal-window__close-btn" type="button">
+      <svg class="modal-window__close-icon" width="40" height="40">
+        <use href="./images/sprite.svg#close-btn"></use>
+      </svg>
     </button>
     <p class="modal-window__text">
       Jeśli prowadzisz działalność związaną ze zwierzętami, organizujesz eventy albo tworzysz swój
@@ -13,19 +12,19 @@
     <form class="form">
       <ul class="form__list">
         <li class="form__item">
-          <label for="tel">
-            <p>Wpisz swój numer telefonu</p>
-            <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
-          </label>
+          <label for="tel" class="label">Wpisz swój numer telefonu </label>
+          <input class="input" type="tel" name="tel" id="tel" placeholder="+48-000-000-000" />
         </li>
         <li class="form__item">
-          <label for="comment">
+          <label for="comment" class="label">
             Wyjaśnij czym się zajmujesz i w jaki sposób chcesz z nami współpracować</label
           >
           <textarea class="comment" name="comment" id="comment" rows="8"></textarea>
         </li>
         <li class="form__item">
-          <label for="comment">Określ czego od nas oczekujesz i jak pomożesz naszej sprawie.</label>
+          <label for="comment" class="label"
+            >Określ czego od nas oczekujesz i jak pomożesz naszej sprawie.</label
+          >
           <textarea class="comment" name="comment" id="comment" rows="8"></textarea>
         </li>
         <li class="form__item">
@@ -34,6 +33,8 @@
           >
         </li>
       </ul>
+
+      <button class="form-submit" type="submit">wyślij</button>
     </form>
   </section>
 </div>
